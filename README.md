@@ -34,8 +34,7 @@ Here're the code and command of evaluation metric including: sequence recovery r
 >
 >Output: Percentile of element-wise similarity between two input sequences.
 
->Usage:  
-'''SEQ_REC 1.fasta 2.fasta testout 2'''
+>Usage:  `SEQ_REC 1.fasta 2.fasta testout 2`
 
 
 ### 2.2 Diversity-Identity Score Metric
