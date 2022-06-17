@@ -6,6 +6,15 @@ This repo is open-source for all protein design learners for providing the bench
 
 ## Menu
 
+- [PRIDE: New Benchmark Dataset For Protein Structural Design](#PRIDE-New-Benchmark-Dataset-For-Protein-Structural-Design)
+  - [About this Repo](## About this Repo)
+  - [Menu](## Menu)
+  - [1. Benchmark Datasets](## 1. Benchmark Datasets)
+    - [1.1 Training Dataset](### 1.1 Training Dataset)
+    - [1.2 Test Dataset](### 1.2 Test Dataset)
+  - [2. Benchmark Evaluation Metric](## 2. Benchmark Evaluation Metric)
+    - [2.1 Data Manipulation and Evaluation Scripts](### 2.1 Data Manipulation and Evaluation Scripts)
+    - [2.2 Diversity-Identity Score Metric](### 2.2 Diversity-Identity Score Metric)
 
 
 ## 1. Benchmark Datasets
@@ -86,7 +95,7 @@ Here, we utilized CAMEO as an independent test set to test existing models’ pe
 
 ## 2. Benchmark Evaluation Metric
 
-### 2.1 Data Manipulation Process 
+### 2.1 Data Manipulation and Evaluation Scripts
 
 Here're the code and command of evaluation metric including: sequence recovery rate, perplexity, TM-score, Diversity-Identity Score Metric.
 
