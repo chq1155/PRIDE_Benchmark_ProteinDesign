@@ -20,13 +20,22 @@ Our training dataset is made up of the CATH dataset. CATH S35 V4.3. consists of 
 
 Here, we utilized CAMEO as an independent test set to test existing models’ performance. Users can directly run the script we provide to update the test set to evaluate the performance of the models. Our chosen proteins dataset ranges in CAMEO from 17-07-2021 to 12-03-2022 and consists of 504 proteins. We selected the hard samples and guaranteed no redundancy exists between the training set.
 
-### 1.3 Data Manipulation Process
-
-Users can use our provided scripts to create their own dataset for flexibility.
 
 
 ## 2. Benchmark Evaluation Metric
 
-### 2.1 Diversity-Identity Score Metric
+### 2.1 Data Manipulation Process 
+
+Here're the code and command of evaluation metric including: sequence recovery rate, perplexity, TM-score, Diversity-Identity Score Metric.
+
+**1. Sequence recovery rate**
+
+>Input: Two .fasta files;
+>Output: Percentile of element-wise similarity between two input sequences.
+
+>Usage: ''' SEQ_REC 1.fasta 2.fasta testout 2'''
+
+
+### 2.2 Diversity-Identity Score Metric
 
 With the above two evaluation metrics, we can probe the structural similarity between the input and the model’s output. Also, we can test the model’s uncertainty on generative quality. However, one protein structure can obtain various output protein sequences. Here, function G evaluates the diversity of the generated sequences. Moreover, evaluation on diversity without considering the generated quality lacks the authority of the effectiveness, thus a structure similarity measuring fuction F is introduced. We combined both functions and designed Diversity-Identity Score Metric. The diversity-identity score E on sequence set S is formulated as a sum of negative-log functions:
