@@ -53,6 +53,8 @@ Our training dataset is made up of the CATH dataset. CATH S35 V4.3. consists of 
 >Column 8:  Domain doundaries
 >```
 
+<div align=center><img width="520" height="240" src="https://github.com/chq1155/PRIDE-Benchmark-For-Protein-Structural-Design/blob/main/Img_Folder/figure2.png"/></div>
+
 2.Processing:
 
 >CATH_stat: code for obtaining statistics of training files. (Users need to change address of file on line 2)
@@ -67,7 +69,8 @@ Our training dataset is made up of the CATH dataset. CATH S35 V4.3. consists of 
 
 >list0.txt-list9.txt: all 10 files splited from TV_Split.py
 
-![Image text](https://github.com/chq1155/PRIDE-Benchmark-For-Protein-Structural-Design/blob/main/Img_Folder/figure1s.png)
+<div align=center><img width="480" height="320" src="https://github.com/chq1155/PRIDE-Benchmark-For-Protein-Structural-Design/blob/main/Img_Folder/figure1s.png"/></div>
+
 
 4.Download:
 
@@ -119,6 +122,8 @@ Here're the code and command of evaluation metric including: sequence recovery r
 
 >Usage: 
 
+<div align=center><img width="480" height="320" src="https://github.com/chq1155/PRIDE-Benchmark-For-Protein-Structural-Design/blob/main/Img_Folder/figure6s.png"/></div>
+
 ### 2.2 Diversity-Identity Score Metric
 
 With the above two evaluation metrics, we can probe the structural similarity between the input and the model’s output. Also, we can test the model’s uncertainty on generative quality. However, one protein structure can obtain various output protein sequences. Here, function G evaluates the diversity of the generated sequences. Moreover, evaluation on diversity without considering the generated quality lacks the authority of the effectiveness, thus a structure similarity measuring fuction F is introduced. We combined both functions and designed Diversity-Identity Score Metric. The diversity-identity score E on sequence set S is formulated as a sum of negative-log functions:
@@ -126,3 +131,5 @@ With the above two evaluation metrics, we can probe the structural similarity be
 $$ E(S) = \frac{1}{N}\sum-log[G^{-\gamma}(s_i,s_{i,cmp}) \cdot F(s_i)]\label{eq1}$$
 
 where $s_i$ denotes the sequence in S, $s_{i,cmp}$ denotes the complement of sequence $s_i$ in S, $N$ is the amount of sequences, $gamma$ is the trade-off parameter, function G is the diversity measurement between sequence $s_i$ and $s_{i,cmp}$, and function F is the structural identity between 3D-structure of $s_i$ after folding and the input structure. 
+
+<div align=center><img width="560" height="240" src="https://github.com/chq1155/PRIDE-Benchmark-For-Protein-Structural-Design/blob/main/Img_Folder/figure7s.png"/></div>
