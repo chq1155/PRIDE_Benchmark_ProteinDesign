@@ -23,3 +23,10 @@ Here, we utilized CAMEO as an independent test set to test existing models’ pe
 ### 1.3 Data Manipulation Process
 
 Users can use our provided scripts to create their own dataset for flexibility.
+
+
+## 2. Benchmark Evaluation Metric
+
+### 2.1 Diversity-Identity Score Metric
+
+With the above two evaluation metrics, we can probe the structural similarity between the input and the model’s output. Also, we can test the model’s uncertainty on generative quality. However, one protein structure can obtain various output protein sequences. Here, function G evaluates the diversity of the generated sequences. Moreover, evaluation on diversity without considering the generated quality lacks the authority of the effectiveness, thus a structure similarity measuring fuction F is introduced. We combined both functions and designed Diversity-Identity Score Metric. The diversity-identity score E on sequence set S is formulated as a sum of negative-log functions:
