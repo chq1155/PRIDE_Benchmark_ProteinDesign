@@ -116,7 +116,7 @@ Here're the code and command of evaluation metric including: sequence recovery r
 
 **4. Diversity-Identity Score**
 
->Input: Batch of sequence and their corresponding structure predicted by [Alphafold2]{https://github.com/deepmind/alphafold}
+>Input: Batch of sequence and their corresponding structure predicted by [Alphafold2](https://github.com/deepmind/alphafold)
 
 >Output: Corresponding score among the batch of sequences
 
