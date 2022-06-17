@@ -14,15 +14,16 @@ We design our benchmark to based on two fundamental principles about generative 
 
 ### 1.1 Training Dataset
 
-Our training dataset is made up of the CATH dataset. CATH S35 V4.3. consists of 32389 proteins ranges up to date 21-Oct-2010. 
-
->Usage: Please go to path ./Data/1.Train_CATH
+Our training dataset is made up of the CATH dataset. CATH S35 V4.3. consists of 32389 proteins ranges up to date 21-Oct-2010. Please go to the dictionary ```./Data/1.Train_CATH```
 
 1.Raw_Data: 
 
 >CATH_Domain_Boundaries.txt: Domain boundaries for each CATH ID.
+>
 >```CATH_ID   Boundaries```
+>
 >CATH_S35_V4.3.0_Domain_List.txt: Domain list for CAHT S35 V4.3.0
+>
 >```
 >Column 1:  CATH domain name (seven characters)
 >Column 2:  Class number
@@ -38,7 +39,9 @@ Our training dataset is made up of the CATH dataset. CATH S35 V4.3. consists of 
 >Column 12: Structure resolution (Angstroms)
 >           (999.000 for NMR structures and 1000.000 for obsolete PDB entries)
 >```
+>
 >CATH_Final_List.txt: All 32389 CATH files with partial domain information as well as domain boundaries merged.
+>
 >```
 >Column 1:  CATH domain name (seven characters)
 >Column 2:  Class number
@@ -53,8 +56,11 @@ Our training dataset is made up of the CATH dataset. CATH S35 V4.3. consists of 
 2.Processing:
 
 >CATH_stat: code for obtaining statistics of training files. (Users need to change address of file on line 2)
+>
 >```python CATH_stat.py```
+>
 >TV_Split: code or train/valid split, divide CATH_Final_List.txt intp 10 equal lists. (Users need to change the file names on line3, 8, 20. Also, user can change the >percentile of train/valid based on our code.)
+>
 >```python TV_Split.py```
 
 3.Final_Data:
@@ -64,6 +70,7 @@ Our training dataset is made up of the CATH dataset. CATH S35 V4.3. consists of 
 4.Download:
 
 >PDB_Load: Input string of training files, download the corresponding .pdb files into current folder.
+>
 >```PDB_Load list0.txt```
 
 ### 1.2 Test Dataset
