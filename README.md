@@ -18,11 +18,11 @@ Our training dataset is made up of the CATH dataset. CATH S35 V4.3. consists of 
 
 1.Raw_Data: 
 
->CATH_Domain_Boundaries.txt: Domain boundaries for each CATH ID.
+>**CATH_Domain_Boundaries.txt:** Domain boundaries for each CATH ID.
 >
 >```CATH_ID   Boundaries```
 >
->CATH_S35_V4.3.0_Domain_List.txt: Domain list for CAHT S35 V4.3.0
+>**CATH_S35_V4.3.0_Domain_List.txt:** Domain list for CAHT S35 V4.3.0
 >
 >```
 >Column 1:  CATH domain name (seven characters)
@@ -40,7 +40,7 @@ Our training dataset is made up of the CATH dataset. CATH S35 V4.3. consists of 
 >           (999.000 for NMR structures and 1000.000 for obsolete PDB entries)
 >```
 >
->CATH_Final_List.txt: All 32389 CATH files with partial domain information as well as domain boundaries merged.
+>**CATH_Final_List.txt:** All 32389 CATH files with partial domain information as well as domain boundaries merged.
 >
 >```
 >Column 1:  CATH domain name (seven characters)
@@ -57,24 +57,24 @@ Our training dataset is made up of the CATH dataset. CATH S35 V4.3. consists of 
 
 2.Processing:
 
->CATH_stat: code for obtaining statistics of training files. (Users need to change address of file on line 2)
+>**CATH_stat:** code for obtaining statistics of training files. (Users need to change address of file on line 2)
 >
 >```python CATH_stat.py```
 >
->TV_Split: code or train/valid split, divide CATH_Final_List.txt intp 10 equal lists. (Users need to change the file names on line3, 8, 20. Also, user can change the >percentile of train/valid based on our code.)
+>**TV_Split:** code or train/valid split, divide CATH_Final_List.txt intp 10 equal lists. (Users need to change the file names on line3, 8, 20. Also, user can change the >percentile of train/valid based on our code.)
 >
 >```python TV_Split.py```
 
 3.Final_Data:
 
->list0.txt-list9.txt: all 10 files splited from TV_Split.py
+>**list0.txt-list9.txt:** all 10 files splited from TV_Split.py
 
 <div align=center><img width="480" height="320" src="https://github.com/chq1155/PRIDE-Benchmark-For-Protein-Structural-Design/blob/main/Img_Folder/figure1s.png"/></div>
 
 
 4.Download:
 
->PDB_Load: Input string of training files, download the corresponding .pdb files into current folder.
+>**PDB_Load:** Input string of training files, download the corresponding .pdb files into current folder.
 >
 >```PDB_Load list0.txt```
 
