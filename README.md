@@ -16,6 +16,56 @@ We design our benchmark to based on two fundamental principles about generative 
 
 Our training dataset is made up of the CATH dataset. CATH S35 V4.3. consists of 32389 proteins ranges up to date 21-Oct-2010. 
 
+>Usage: Please go to path ./Data/1.Train_CATH
+
+1.Raw_Data: 
+
+>CATH_Domain_Boundaries.txt: Domain boundaries for each CATH ID.
+>```CATH_ID   Boundaries```
+>CATH_S35_V4.3.0_Domain_List.txt: Domain list for CAHT S35 V4.3.0
+>```
+>Column 1:  CATH domain name (seven characters)
+>Column 2:  Class number
+>Column 3:  Architecture number
+>Column 4:  Topology number
+>Column 5:  Homologous superfamily number
+>Column 6:  S35 sequence cluster number
+>Column 7:  S60 sequence cluster number
+>Column 8:  S95 sequence cluster number
+>Column 9:  S100 sequence cluster number
+>Column 10: S100 sequence count number
+>Column 11: Domain length
+>Column 12: Structure resolution (Angstroms)
+>           (999.000 for NMR structures and 1000.000 for obsolete PDB entries)
+>```
+>CATH_Final_List.txt: All 32389 CATH files with partial domain information as well as domain boundaries merged.
+>```
+>Column 1:  CATH domain name (seven characters)
+>Column 2:  Class number
+>Column 3:  Architecture number
+>Column 4:  Topology number
+>Column 5:  Homologous superfamily number
+>Column 6:  S35 sequence cluster number
+>Column 7:  Chain ID
+>Column 8:  Domain doundaries
+>```
+
+2.Processing:
+
+>CATH_stat: code for obtaining statistics of training files. (Users need to change address of file on line 2)
+>```python CATH_stat.py```
+>TV_Split: code or train/valid split, divide CATH_Final_List.txt intp 10 equal lists. (Users need to change the file names on line3, 8, 20. Also, user can change the >percentile of train/valid based on our code.)
+>```python TV_Split.py```
+
+3.Final_Data:
+
+>list0.txt-list9.txt: all 10 files splited from TV_Split.py
+
+4.Download:
+
+>PDB_Load: Input string of training files, download the corresponding .pdb files into current folder.
+>```PDB_Load list0.txt```
+
 ### 1.2 Test Dataset
 
 Here, we utilized CAMEO as an independent test set to test existing models’ performance. Users can directly run the script we provide to update the test set to evaluate the performance of the models. Our chosen proteins dataset ranges in CAMEO from 17-07-2021 to 12-03-2022 and consists of 504 proteins. We selected the hard samples and guaranteed no redundancy exists between the training set.
