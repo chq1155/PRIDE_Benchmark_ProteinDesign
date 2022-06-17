@@ -67,6 +67,8 @@ Our training dataset is made up of the CATH dataset. CATH S35 V4.3. consists of 
 
 >list0.txt-list9.txt: all 10 files splited from TV_Split.py
 
+![Image text]{https://github.com/chq1155/PRIDE-Benchmark-For-Protein-Structural-Design/blob/main/Img_Folder/figure1s.png}
+
 4.Download:
 
 >PDB_Load: Input string of training files, download the corresponding .pdb files into current folder.
