@@ -89,7 +89,25 @@ Our training dataset is made up of the CATH dataset. CATH S35 V4.3. consists of 
 
 ### 1.2 Test Dataset
 
-Here, we utilized CAMEO as an independent test set to test existing models’ performance. Users can directly run the script we provide to update the test set to evaluate the performance of the models. Our chosen proteins dataset ranges in CAMEO from 17-07-2021 to 12-03-2022 and consists of 504 proteins. We selected the hard samples and guaranteed no redundancy exists between the training set.
+Here, we utilized CAMEO as an independent test set to test existing models’ performance. Users can directly run the script we provide to update the test set to evaluate the performance of the models. Our chosen proteins dataset ranges in CAMEO from 17-07-2021 to 12-03-2022 and consists of 504 proteins. We selected the hard samples and guaranteed no redundancy exists between the training set. Please go to the dictionary ```./Data/2.Test_CAMEO```
+
+1. Raw_Data
+
+>**CAMEO_Version1.zip:** PDB Files of test set.
+>
+>**CAMEO_List:** Corresponding CAMEO list of CAMEO_Version1.zip.
+
+2. Processing
+
+
+3. Final_Data
+
+>**valid_h:** List of 'hard' CAMEO in CAMEO_List.
+>
+>**valid_hm:** List of 'hard' & 'medium' CAMEO in CAMEO_List.
+>
+>**valid_hme:** List of 'hard' & 'medium' & 'easy' CAMEO in CAMEO_List.
+
 
 
 
