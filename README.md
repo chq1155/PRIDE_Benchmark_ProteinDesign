@@ -127,11 +127,11 @@ Here're the code and command of evaluation metric including: sequence recovery r
 
 **2. Perplexity**
 
->Input:
+>Input: Batch of sequence
 
->Output:
+>Output: Corresponding perplexity
 
->Usage: 
+>Usage: `Refer to colab notebook presented by [Hugging Face](https://colab.research.google.com/github/huggingface/notebooks/blob/main/transformers_doc/en/pytorch/perplexity.ipynb)`
 
 **3. TM-score**
 
