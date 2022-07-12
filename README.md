@@ -131,7 +131,7 @@ Here're the code and command of evaluation metric including: sequence recovery r
 
 >Output: Corresponding perplexity
 
->Usage: `Refer to colab notebook presented by [Hugging Face](https://colab.research.google.com/github/huggingface/notebooks/blob/main/transformers_doc/en/pytorch/perplexity.ipynb)`
+>Usage: `Refer to notebook from [Hugging Face](https://colab.research.google.com/github/huggingface/notebooks/blob/main/transformers_doc/en/pytorch/perplexity.ipynb)`
 
 **3. TM-score**
 
