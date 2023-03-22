@@ -15,6 +15,7 @@ This repo is open-source for all protein design learners for providing the bench
   - [2. Benchmark Evaluation Metric](#2-Benchmark-Evaluation-Metric)
     - [2.1 Data Manipulation and Evaluation Scripts](#21-Data-Manipulation-and-Evaluation-Scripts)
     - [2.2 Diversity-Identity Score Metric](#22-Diversity-Identity-Score-Metric)
+  - [3. Benchmark Models](#3-Benchmark-Models)
 
 
 ## 1. Benchmark Datasets
@@ -160,3 +161,11 @@ $$ E(S) = \frac{1}{N}\sum-log[G^{-\gamma}(s_i,s_{i,cmp}) \cdot F(s_i)]\label{eq1
 where $s_i$ denotes the sequence in S, $s_{i,cmp}$ denotes the complement of sequence $s_i$ in S, $N$ is the amount of sequences, $gamma$ is the trade-off parameter, function G is the diversity measurement between sequence $s_i$ and $s_{i,cmp}$, and function F is the structural identity between 3D-structure of $s_i$ after folding and the input structure. 
 
 <div align=center><img width="560" height="240" src="https://github.com/chq1155/PRIDE-Benchmark-For-Protein-Structural-Design/blob/main/Img_Folder/figure7s.png"/></div>
+
+## 3. Benchmark Models
+
+SPROF: https://github.com/biomed-AI/SPROF
+GVPTransformer (esm-if): https://github.com/facebookresearch/esm
+GVP: https://github.com/drorlab/gvp-pytorch
+GraphTrans: https://github.com/jingraham/neurips19-graph-protein-design
+ProteinMPNN: https://github.com/dauparas/ProteinMPNN
