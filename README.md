@@ -164,8 +164,9 @@ where $s_i$ denotes the sequence in S, $s_{i,cmp}$ denotes the complement of seq
 
 ## 3. Benchmark Models
 
-SPROF: https://github.com/biomed-AI/SPROF
-GVPTransformer (esm-if): https://github.com/facebookresearch/esm
-GVP: https://github.com/drorlab/gvp-pytorch
-GraphTrans: https://github.com/jingraham/neurips19-graph-protein-design
-ProteinMPNN: https://github.com/dauparas/ProteinMPNN
+SPROF: https://github.com/biomed-AI/SPROF 
+GVPTransformer (esm-if): https://github.com/facebookresearch/esm 
+GVP: https://github.com/drorlab/gvp-pytorch 
+GraphTrans: https://github.com/jingraham/neurips19-graph-protein-design 
+ProteinMPNN: https://github.com/dauparas/ProteinMPNN 
+
